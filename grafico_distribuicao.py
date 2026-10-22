@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv('dados_distribuicao.csv')
+df = pd.read_csv('dados_distribuicao.csv', sep='\t')
 
 plt.figure(figsize=(8, 5))
 sns.histplot(df['idade'], kde=True, bins=20, color='blue')

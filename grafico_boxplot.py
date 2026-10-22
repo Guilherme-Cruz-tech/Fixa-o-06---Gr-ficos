@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv('dados_boxplot.csv')
+df = pd.read_csv('dados_boxplot.csv', sep='\t', header=None)
 df.columns = ['departamento', 'valor']
 
 plt.figure(figsize=(9, 6))

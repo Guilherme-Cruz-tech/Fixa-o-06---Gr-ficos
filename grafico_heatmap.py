@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv('dados_heatmap.csv')
+df = pd.read_csv('dados_heatmap.csv', sep='\t', header=None)
 df.columns = ['departamento', 'valor']
 
 df['indice'] = df.groupby('departamento').cumcount()

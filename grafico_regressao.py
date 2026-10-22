@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv('dados_regressao.csv')
+df = pd.read_csv('dados_regressao.csv', sep='\t')
 
 plt.figure(figsize=(8, 6))
 sns.regplot(

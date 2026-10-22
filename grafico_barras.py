@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv('dados_barras.csv')
+df = pd.read_csv('dados_barras.csv', sep='\t')
 
 plt.figure(figsize=(10, 6))
 sns.barplot(

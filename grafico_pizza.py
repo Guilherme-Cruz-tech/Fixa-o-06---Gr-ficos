@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import seaborn as sns
 
-df = pd.read_csv('dados_pizza.csv')
+df = pd.read_csv('dados_pizza.csv', sep='\t')
 
 plt.figure(figsize=(7, 7))
 plt.pie(

@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv('dados_frequencia.csv')
+df = pd.read_csv('dados_frequencia.csv', sep='\t')
 freq = df['tipo_atendimento'].value_counts()
 
 plt.figure(figsize=(8, 5))

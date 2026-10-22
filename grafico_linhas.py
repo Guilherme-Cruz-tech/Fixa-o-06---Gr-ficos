@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv('dados_linhas.csv')
+df = pd.read_csv('dados_linhas.csv', sep='\t')
 df['data'] = pd.to_datetime(df['data'])
 
 plt.figure(figsize=(12, 6))
